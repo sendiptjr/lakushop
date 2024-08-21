@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lakushop.id
+
+# Sitemaps
+Sitemap: https://www.lakushop.id/sitemap.xml

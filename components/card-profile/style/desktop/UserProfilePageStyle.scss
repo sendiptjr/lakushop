@@ -1,0 +1,1120 @@
+input[type="text"]:disabled {
+  background-color: white;
+}
+
+.titleUpload1 {
+  font-family: "SFProText-Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100%;
+  text-align: center;
+  color: #000000;
+  margin: 1rem 0;
+}
+.iconModal1 {
+  width: 65%;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.container-modal-del-wishlist1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.textInformasi {
+  -webkit-appearance: none;
+}
+.formEditFullname {
+  border: 1px solid #d4d5d5;
+  border-radius: 6px;
+  width: fit-content;
+  height: 32px;
+  margin-left: 0px;
+  padding: 0 10px;
+}
+.inputFullName {
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-family: "SFUIDisplay-Bold";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5425px;
+  color: #231f20;
+  padding: 0;
+  border: none;
+  max-width: 22vw;
+  height: auto;
+}
+.inputFullName:focus {
+  outline: none;
+}
+.inputFullName::placeholder {
+  font-family: "SFUIDisplay-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5425px;
+  color: #231f20;
+  opacity: 0.5;
+}
+
+.changePhoneNumber {
+  background-color: transparent;
+  font-family: "SFUIDisplay-Bold";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5425px;
+  color: #231f20;
+  padding: 0;
+  border: none;
+  height: auto;
+}
+.changePhoneNumber:focus {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .headerCpass {
+    background-color: #ffffff;
+  }
+  .containerProfile {
+    position: relative;
+    width: 60%;
+  }
+  .imageProfile {
+    opacity: 1;
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 100%;
+    background-size: cover;
+  }
+  .containerProfile:hover .imageProfile {
+    opacity: 0.3;
+  }
+
+  .containerProfile:hover .middleProfile {
+    opacity: 1;
+  }
+  .middleProfile {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+  }
+  .textProfile1 {
+    color: rgb(83, 83, 83);
+    font-size: 1vw;
+    cursor: pointer;
+    width: 5vw;
+  }
+  .tar {
+    text-align: right;
+    position: absolute;
+    bottom: 25%;
+    left: 110%;
+  }
+  .buttonchangecamera {
+    display: inline-block;
+    cursor: pointer;
+    width: 4vw;
+  }
+  .modal-header-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 1vw 0;
+  }
+  .styleHeaderCropProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    width: 70%;
+    color: #e0a800;
+    font-size: 35px;
+  }
+  .iconbackheaderprofile {
+    transform: scaleX(-1);
+    width: 0.7vw;
+  }
+  .terapkancropprofile {
+    cursor: pointer;
+    font-size: 28px;
+    float: left;
+    margin-top: -8px;
+  }
+  .buttonterapkanprofile {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+  }
+  .modalcropprofile {
+    height: 550px;
+  }
+  .crop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+  }
+  .Crop_Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    user-select: none;
+    touch-action: none;
+    cursor: move;
+  }
+  .Crop_Image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+  }
+  .Crop_Area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #e0a800;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 9999em;
+    color: rgba(220, 220, 220, 0.5);
+    overflow: hidden;
+  }
+  .Crop_AreaRound {
+    border-radius: 50%;
+  }
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .slider {
+    padding: 22px 0px;
+  }
+  .container-tab-profile {
+    padding-top: 3rem;
+    margin-left: -3vw;
+  }
+  .input-field {
+    width: 80%;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .btn-verify {
+    background-color: #E0BF4B;
+    font-weight: bold;
+    font-family: "SFUIText-Regular";
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 10%;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+  .verified {
+    font-family: "SFProText-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    color: #148f0f;
+    background: rgba(20, 143, 15, 0.3);
+  }
+  .containerCardProfile {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6rem;
+    padding-right: 5vw;
+  }
+  .containerCardInformation {
+    margin-top: 6.6rem;
+  }
+  .cardProfile {
+    margin-top: 1.2rem;
+    width: 18vw;
+    height: fit-content;
+    padding: 1vw;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileMenus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .rowMenus {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .textProfile {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #292929;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .textEmail {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    text-align: center;
+  }
+  .line1 {
+    width: 87%;
+    height: 4px;
+    background-color: #f8f9fd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .textMenus {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .iconProfile {
+    margin-top: 2px;
+  }
+  .line {
+    width: 162px;
+    border: 1px solid #f8f9fd;
+    margin: 14px 0 16px 18px;
+  }
+  .cardInformation {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    width: 810px;
+    min-height: 620px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .tabProfileRow {
+    display: flex;
+    margin-left: 2rem;
+  }
+  .tabProfile {
+    margin-right: 40px;
+  }
+  .textTabProfile {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .tabDaftarAlamat {
+    margin-left: 48px;
+  }
+  .statusTabActive {
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #E0BF4B;
+    font-weight: bold;
+  }
+  .statusTab {
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .tabInformasi {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  .tabAlamat {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  .containerAlamat {
+    height: 400px;
+  }
+  .judulInformasi {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #8e8e8e;
+    margin-bottom: 5px;
+  }
+  .rowInformasi {
+    margin: 0;
+    align-items: "baseline";
+  }
+  .textInformasi {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5425px;
+    color: #231f20;
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+  .textInformasi:focus {
+    outline: none;
+  }
+  .textInformasi::placeholder {
+    color: #000000;
+  }
+  .formVerify {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5425px;
+    color: #231f20;
+    border-radius: 8px;
+    border: 1px solid #8e8e8e80;
+    padding: 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    max-width: 50%;
+  }
+  .formVerify::placeholder {
+    color: #000000;
+  }
+  .formVerify:focus {
+    outline: none;
+  }
+  .btnChange {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #148f0f;
+    margin-left: 15px;
+  }
+  .btnChange:focus {
+    outline: none;
+  }
+  .btnChange:disabled {
+    color: #565555;
+  }
+  .addressTitleUP {
+    font-family: "SFProText-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4vw;
+    color: #000000;
+  }
+  .lineAddress {
+    flex: 1;
+  }
+  .other-address {
+    padding: 15px;
+    padding-left: 25px;
+    flex: 1;
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid #d4d5d5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .address-selected {
+    padding: 15px;
+    padding-left: 25px;
+    flex: 1;
+    height: fit-content;
+    background: #f9f9f9;
+    border: 1px solid #148f0f;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .addressTitleUP {
+    font-family: "SFProText-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4vw;
+    color: #050505;
+  }
+  .addressName {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    opacity: 0.4;
+    margin-bottom: 0px;
+  }
+  .addressComplete {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    opacity: 0.4;
+  }
+  .addressOption {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: 37px;
+  }
+  .addressEdit {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #148f0f;
+    opacity: 0.75;
+    height: 36px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .addressSelect {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    background: #5acc4d;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0;
+    margin-left: 20px;
+    width: 136px;
+    height: 36px;
+    cursor: pointer;
+  }
+  .add-newaddress {
+    border: 2px dashed #565555;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #050505;
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .modal-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .terapkancropprofile {
+    cursor: pointer;
+    font-size: 28px;
+    float: left;
+  }
+  .buttonterapkanprofile {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    width: 100%;
+  }
+  .del-modal-body1 {
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    padding: 20px 20px;
+    vertical-align: middle;
+    margin-top: 7rem;
+  }
+  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+  .input-field {
+    width: 80%;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .btn-verify {
+    background-color: #E0BF4B;
+    font-weight: bold;
+    font-family: "SFUIText-Regular";
+    border-radius: 6px;
+    margin-left: 10px;
+    width: 10%;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+  .verified {
+    font-family: "SFProText-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    color: #148f0f;
+    background: rgba(20, 143, 15, 0.3);
+  }
+  .containerCardProfile {
+    margin-top: 7.5rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .containerCardInformation {
+    margin-top: 10rem;
+  }
+  .cardProfile {
+    margin-top: 2.5rem;
+    width: 17rem;
+    height: fit-content;
+    padding: 1vw;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileMenus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .rowMenus {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .textProfile {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #292929;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .textEmail {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    text-align: center;
+  }
+  .line1 {
+    width: 87%;
+    height: 4px;
+    background-color: #f8f9fd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .textMenus {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #292929;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .iconProfile {
+    margin-top: 2px;
+  }
+  .line {
+    width: 162px;
+    border: 1px solid #f8f9fd;
+    margin: 14px 0 16px 18px;
+  }
+  .cardInformation {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    width: 62vw;
+    min-height: 610px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .tabProfileRow {
+    display: flex;
+    margin-left: 2rem;
+  }
+  .tabProfile {
+    margin-right: 20px;
+  }
+  .textTabProfile {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .tabDaftarAlamat {
+    margin-left: 48px;
+  }
+  .statusTabActive {
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #E0BF4B;
+    font-weight: bold;
+  }
+  .statusTab {
+    display: flex;
+    margin-right: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .tabInformasi {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  .tabAlamat {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+  .containerAlamat {
+    height: 400px;
+  }
+  .judulInformasi {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #8e8e8e;
+    margin-bottom: 5px;
+  }
+  .rowInformasi {
+    margin: 0;
+    align-items: "baseline";
+  }
+  .textInformasi {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5425px;
+    color: #231f20;
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+  .textInformasi:focus {
+    outline: none;
+  }
+  .textInformasi::placeholder {
+    color: #000000;
+  }
+  .formVerify {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5425px;
+    color: #231f20;
+    border-radius: 8px;
+    border: 1px solid #8e8e8e80;
+    padding: 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    max-width: 50%;
+  }
+  .formVerify::placeholder {
+    color: #000000;
+  }
+  .formVerify:focus {
+    outline: none;
+  }
+  .btnChange {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #148f0f;
+    margin-left: 15px;
+  }
+  .btnChange:focus {
+    outline: none;
+  }
+  .btnChange:disabled {
+    color: #565555;
+  }
+  .addressTitleUP {
+    font-family: "SFProText-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4vw;
+    color: #000000;
+  }
+  .lineAddress {
+    flex: 1;
+  }
+  .other-address {
+    padding: 15px;
+    padding-left: 25px;
+    flex: 1;
+    height: fit-content;
+    background: #ffffff;
+    border: 1px solid #d4d5d5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .address-selected {
+    padding: 15px;
+    padding-left: 25px;
+    flex: 1;
+    height: fit-content;
+    background: #f9f9f9;
+    border: 1px solid #148f0f;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .addressTitleUP {
+    font-family: "SFProText-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.4vw;
+    color: #050505;
+  }
+  .addressName {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    opacity: 0.4;
+    margin-bottom: 0px;
+  }
+  .addressComplete {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    opacity: 0.4;
+  }
+  .addressOption {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .addressEdit {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #148f0f;
+    opacity: 0.75;
+    height: 36px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .addressSelect {
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    background: #5acc4d;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0;
+    margin-left: 20px;
+    width: 136px;
+    height: 36px;
+    cursor: pointer;
+  }
+  .add-newaddress {
+    border: 2px dashed #565555;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-family: "SFUIText-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #050505;
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .modal-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .imageProfile {
+    opacity: 1;
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 100%;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .headerCpass {
+    background-color: #ffffff;
+  }
+  .containerProfile {
+    position: relative;
+  }
+  .middleProfile {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+  }
+  .containerProfile:hover .imageProfile {
+    opacity: 0.3;
+  }
+
+  .containerProfile:hover .middleProfile {
+    opacity: 1;
+  } 
+  .textProfile1 {
+    color: rgb(83, 83, 83);
+    font-size: 10px;
+    cursor: pointer;
+    width: 5vw;
+  }
+  .buttonchangecamera {
+    display: inline-block;
+    cursor: pointer;
+    width: 4vw;
+  }
+  .tar {
+    text-align: right;
+    position: absolute;
+    bottom: 25%;
+    left: 67%;
+  }
+  .Crop_Image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+  }
+  .Crop_Area {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #e0a800;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 9999em;
+    color: rgba(220, 220, 220, 0.5);
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .Crop_Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: none;
+    cursor: move;
+  }
+  .crop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+  }
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .modalcropprofile {
+    height: 550px;
+  }
+  .styleHeaderCropProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    width: 70%;
+    color: #e0a800;
+    font-size: 35px;
+  }
+  .modal-header-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 1vw 0;
+  }
+  .iconbackheaderprofile {
+    transform: scaleX(-1);
+    width: 0.7vw;
+  }
+  .terapkancropprofile {
+    cursor: pointer;
+    font-size: 28px;
+    float: left;
+  }
+  .buttonterapkanprofile {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    width: 100%;
+  }
+  .del-modal-body1 {
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    padding: 20px 20px;
+    vertical-align: middle;
+    margin-top: 7rem;
+  }
+}

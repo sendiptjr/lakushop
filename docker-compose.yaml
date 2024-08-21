@@ -1,0 +1,22 @@
+version: '3'
+
+name: app
+
+services:
+  backoffice:
+    container_name: app_webcommerce
+    ports:
+      - "${APP_PORT}:80"
+    build:
+      context: .
+      args:
+        - NG_CONFIGURATION=${NG_CONFIGURATION}
+        - ENV_NODE_OPTIONS=${ENV_NODE_OPTIONS}
+        - ENV_GENERATE_SOURCEMAP=${ENV_GENERATE_SOURCEMAP}
+      dockerfile: Dockerfile
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

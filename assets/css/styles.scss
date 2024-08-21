@@ -1,0 +1,14 @@
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+// import icons
+@import './fonts/icons/icons.css';
+@import './fonts.scss';
+
+// import main
+@import './main.scss';
+@import './Modal.module.scss';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
