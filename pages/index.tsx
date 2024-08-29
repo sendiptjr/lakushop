@@ -81,6 +81,8 @@ const IndexPage = () => {
       sendAnalyticsEvent();
     }
   }, []);
+  
+
 
   const fetchInfo = async () => {
     try {

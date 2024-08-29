@@ -42,6 +42,7 @@ const Header = ({ isErrorPage, showLogin }: HeaderType) => {
   const [showAnime, setShowAnime] = useState(false);
   const [email, setEmail] = useState("");
   const [restart, setRestart] = useState(false);
+  const [disable, setDisable] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showModalProfile, setShowModalProfile] = useState(false);
   const [showModalRegister, setShowModalRegister] = useState(false);
@@ -140,7 +141,6 @@ const Header = ({ isErrorPage, showLogin }: HeaderType) => {
     }
   };
 
-  
   const onSubmit = async (data: any) => {
     const body = {
       username: data.email,
@@ -152,7 +152,7 @@ const Header = ({ isErrorPage, showLogin }: HeaderType) => {
         setEmail(data.email);
         setSeconds(res?.data?.minute_expired * 60);
         setShowCode(!showCode);
-        setCode('')
+        setCode("");
       }
     } catch (error: any) {
       setError(error?.response?.data?.error);
@@ -183,13 +183,11 @@ const Header = ({ isErrorPage, showLogin }: HeaderType) => {
     const userToken = localStorage.getItem("token");
     return userToken;
   };
-useEffect(() => {
-    if(showLogin){
-      handleProfileLinkClick()
+  useEffect(() => {
+    if (showLogin) {
+      handleProfileLinkClick();
     }
-  
-  
-}, [showLogin])
+  }, [showLogin]);
   const handleCart = () => {
     const userToken = localStorage.getItem("token");
 
@@ -214,7 +212,6 @@ useEffect(() => {
 
   const handleSubmitCode = async () => {
     if (code.length === 6) {
-      
       const body = {
         username: email,
         otp: code,
@@ -244,16 +241,14 @@ useEffect(() => {
     try {
       const res = await axios.post(`user/api/submit_forgot_password`, body);
       if (res) {
-        setSuccessReset('Berhasil Update Password!')
+        setSuccessReset("Berhasil Update Password!");
 
         setTimeout(() => {
           setShowPassword(false);
           setShowModal(true);
           setError("");
-          setSuccessReset('')
+          setSuccessReset("");
         }, 500);
-       
-        
       }
     } catch (error: any) {
       setError(error?.response?.data?.error);
@@ -261,9 +256,20 @@ useEffect(() => {
   };
   const isMobile = typeof window !== "undefined" && window.innerWidth < 1024;
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if(!/mobile/i.test(userAgent)){
+      setDisable(true)
+    }
+  },[])
+
   return (
-    <header className={`site-header ${!onTop ? "site-header--fixed" : ""}`}>
-      <Modal
+    
+    <header className={`site-header ${disable ? '' : !onTop ? "site-header--fixed" : ""}`}>
+      {disable ? <>
+       </> : 
+       <>
+       <Modal
         right={true}
         isOpen={showModalProfile}
         onClose={() => setShowModalProfile(false)}
@@ -280,7 +286,9 @@ useEffect(() => {
           <button
             onMouseEnter={() => setActiveButton("/profile/dash")}
             onMouseLeave={() => setActiveButton(null)}
-            onClick={() =>  router.push({ pathname: "/profile", query: { header: 1 } })}
+            onClick={() =>
+              router.push({ pathname: "/profile", query: { header: 1 } })
+            }
             style={{
               display: "flex",
               flexDirection: "row",
@@ -372,21 +380,21 @@ useEffect(() => {
         </div>
       </Modal>
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-      <div
+        <div
           className="scroll-container"
           style={{ display: "flex", overflowY: "scroll", height: 500 }}
         >
-        <LoginPage
-          handleClose={() => setShowModal(false)}
-          showRegister={() => {
-            setShowModal(false);
-            setShowModalRegister(true);
-          }}
-          handleForget={() => {
-            setShowModal(false);
-            setShowForgetPassword(true);
-          }}
-        />
+          <LoginPage
+            handleClose={() => setShowModal(false)}
+            showRegister={() => {
+              setShowModal(false);
+              setShowModalRegister(true);
+            }}
+            handleForget={() => {
+              setShowModal(false);
+              setShowForgetPassword(true);
+            }}
+          />
         </div>
       </Modal>
       <Modal
@@ -410,7 +418,7 @@ useEffect(() => {
         isOpen={showModalForgetPassword}
         onClose={() => setShowForgetPassword(false)}
       >
-        <div style={{  height: 350, width: 300 }}>
+        <div style={{ height: 350, width: 300 }}>
           <div>
             <div
               onClick={() => {
@@ -660,7 +668,7 @@ useEffect(() => {
                   Password Tidak Sesuai
                 </h1>
               ) : null}
-               {successReset ? (
+              {successReset ? (
                 <h1
                   style={{
                     textAlign: "center",
@@ -751,7 +759,7 @@ useEffect(() => {
               Home
             </a>
           </Link>
-          <Link href="/products">
+          <Link  href="/products">
             <a
               onMouseEnter={() => setHover("Products")}
               onMouseLeave={() => setHover("")}
@@ -888,8 +896,10 @@ useEffect(() => {
             </i> */}
           </button>
         </div>
-      </div>
-    </header>
+      </div> 
+       </>
+      }
+    </header> 
   );
 };
 
